@@ -7,9 +7,9 @@ curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dot
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.p10k.zsh -o ~/.p10k.zsh
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.tmux.conf -o ~/.tmux.conf
 
-echo "XDG_DATA_DIRS=/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS" >> ~/.profile
-echo "PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH" >> ~/.profile
-echo "PATH=/home/linuxbrew/.linuxbrew/bin:$PATH" >> ~/.profile
+echo "export XDG_DATA_DIRS=/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS" >> ~/.profile
+echo "export PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH" >> ~/.profile
+echo "export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH" >> ~/.profile
 
 #homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
