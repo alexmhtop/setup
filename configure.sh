@@ -16,22 +16,8 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 source .profile
 
 #essentials
+sudo apt install -y build-essential
 brew install bat bat-extras eza fd gcc git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit
-
-#lazy vim
-brew install nvim
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
-
-
-#lazy vim dependency
-sudo apt install -y build-essential 
-brew install zsh fd rg lazygit bat fzf eza gcc pnpm tree-sitter cpanm ruby pipx k9s kubecolor teller
-python3 -m pip install neovim --break-system-packages
-brew install node rust
-source ~/.zshrc
-pnpm -g install neovim
-cpanm Neovim::EXT
 
 #tmux
 # start a server but don't attach to it
@@ -43,4 +29,20 @@ sleep 1
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 # killing the server is not required, I guess
 tmux kill-server
+
+#lazy vim
+brew install nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
+
+#lazy vim dependency
+brew install pnpm tree-sitter cpanm ruby pipx teller
+python3 -m pip install neovim --break-system-packages
+brew install node rust
+source ~/.zshrc
+pnpm -g install neovim
+cpanm Neovim::EXT
+
+
 
