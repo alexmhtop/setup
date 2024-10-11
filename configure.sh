@@ -13,6 +13,10 @@ echo "export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH" >> ~/.profile
 
 #homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+source .profile
+
+#essentials
+brew install bat bat-extras eza fd gcc git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit
 
 #lazy vim
 brew install nvim
