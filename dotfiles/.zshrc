@@ -55,6 +55,8 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
