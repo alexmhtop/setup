@@ -3,9 +3,11 @@
 
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+mkdir -p ~/.config/starship/
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.zshrc -o ~/.zshrc
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.p10k.zsh -o ~/.p10k.zsh
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.tmux.conf -o ~/.tmux.conf
+curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.tmux.conf -o ~/.config/starship/starship.toml
 
 echo "export XDG_DATA_DIRS=/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS" >> ~/.profile
 echo "export PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH" >> ~/.profile
@@ -17,7 +19,7 @@ source .profile
 
 #essentials
 sudo apt install -y build-essential
-brew install bat bat-extras eza fd gcc git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit
+brew install bat bat-extras eza fd gcc git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit fzf starship
 
 #tmux
 # start a server but don't attach to it
