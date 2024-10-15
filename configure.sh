@@ -18,7 +18,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 source .profile
 
 #essentials
-sudo apt install -y build-essential
+sudo apt install -y build-essential lua5.1 luarocks
 brew install bat bat-extras eza fd gcc rg git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit fzf starship
 
 #tmux
