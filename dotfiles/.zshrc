@@ -85,6 +85,7 @@ alias nv='nvim'
 alias k='kubectl'
 alias ll='eza --icons -la'
 alias cat='bat -pp'
+alias z='zoxide'
 
 # Shell integrations
 eval "$(fzf --zsh)"
