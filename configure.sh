@@ -19,7 +19,7 @@ source .profile
 
 #essentials
 sudo apt install -y build-essential
-brew install bat bat-extras eza fd gcc git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit fzf starship
+brew install bat bat-extras eza fd gcc rg git-delta k9s kubecolor kubectx neovim zoxide zsh lazygit fzf starship
 
 #tmux
 # start a server but don't attach to it
