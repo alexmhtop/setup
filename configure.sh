@@ -7,7 +7,7 @@ mkdir -p ~/.config/starship/
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.zshrc -o ~/.zshrc
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.p10k.zsh -o ~/.p10k.zsh
 curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.tmux.conf -o ~/.tmux.conf
-curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/.tmux.conf -o ~/.config/starship/starship.toml
+curl -fsSL https://raw.githubusercontent.com/alexmhtop/setup/refs/heads/main/dotfiles/starship.toml -o ~/.config/starship/starship.toml
 
 echo "export XDG_DATA_DIRS=/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS" >> ~/.profile
 echo "export PATH=/home/linuxbrew/.linuxbrew/sbin:$PATH" >> ~/.profile
